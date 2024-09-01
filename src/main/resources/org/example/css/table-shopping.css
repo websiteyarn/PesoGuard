@@ -1,0 +1,107 @@
+/*@font-face {
+    src: url("/org/example/Inter-Regular.ttf");
+}*/
+
+.table-view,
+.scroll-pane {
+    -fx-background-color: white;
+    -fx-padding: 0;
+    -fx-table-cell-border-color: transparent;
+}
+
+.table-view .scroll-bar * {
+    -fx-min-height: 0;
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+}
+
+.table-view .virtual-flow .scroll-bar .thumb {
+    -fx-background-color: #03573C;
+    -fx-background-radius: 5;
+    -fx-pref-width: 3;
+}
+
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #27AE60;
+    -fx-border-width: 1;
+}
+
+.table-view .column-header .label {
+    -fx-font-family: 'Inter';
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-padding: 6 0 6 0;
+}
+
+.table-view .column-header .label .text {
+    -fx-stroke: white;
+    -fx-stroke-width: 0.5;
+}
+
+.table-row-cell,
+.table-row-cell:odd {
+    -fx-background-color: transparent;
+}
+
+.table-row-cell:hover  {
+    -fx-background-color: #D6D4D4;
+}
+
+.table-row-cell:empty {
+    -fx-background-color: transparent;
+}
+
+.table-row-cell:empty {
+    -fx-border-width: 0;
+}
+
+.click .table-row-cell:hover  {
+    -fx-background-color: #D6D4D4;
+    -fx-cursor: hand;
+}
+
+.click .table-row-cell:empty {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-cursor: default;
+}
+
+.table-column {
+    -fx-alignment: center;
+}
+
+.table-view .table-cell {
+    -fx-font-family: 'Inter';
+    -fx-font-size: 13;
+    -fx-text-fill: black;
+    -fx-padding: 0 0 0 6;
+}
+
+.scroll-pane:focused,
+.table-view:focused {
+    -fx-background-color: -fx-box-border, -fx-control-inner-background;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.table-view:focused .table-row-cell:focused {
+    -fx-background-insets: 0 0 0 0;
+    -fx-table-cell-border-color: transparent;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical,
+.table-view .virtual-flow .scroll-bar:vertical .track,
+.table-view .virtual-flow .scroll-bar:vertical .track-background,
+.table-view .virtual-flow .scroll-bar:horizontal,
+.table-view .virtual-flow .scroll-bar:horizontal .track,
+.table-view .virtual-flow .scroll-bar:horizontal .track-background,
+.table-view .virtual-flow .scroll-bar .increment-button,
+.table-view .virtual-flow .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+}

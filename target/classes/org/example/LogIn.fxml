@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="790.0" style="-fx-background-color: white;" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.LogIn">
+   <top>
+      <AnchorPane prefHeight="120.0" prefWidth="790.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="78.0" layoutY="40.0" text="PesoGuard" textFill="#27ae60">
+               <font>
+                  <Font size="41.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="btnReturn" fitHeight="40.0" fitWidth="52.0" layoutX="22.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@return_appdev.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="415.0" prefWidth="414.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="114.0" layoutY="86.0" spacing="15.0">
+               <children>
+                  <VBox>
+                     <children>
+                        <Label text="USERNAME" />
+                        <TextField fx:id="tf_username" prefHeight="26.0" prefWidth="186.0" />
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <Label text="PASSWORD" />
+                        <PasswordField fx:id="tf_password" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <Button fx:id="btnLogIn" layoutX="162.0" layoutY="216.0" mnemonicParsing="false" onAction="#showMain" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #27ae60;" text="LOG IN" textFill="#efeeee">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <bottom>
+      <AnchorPane prefHeight="82.0" prefWidth="790.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <right>
+      <AnchorPane prefHeight="415.0" prefWidth="348.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="266.0" fitWidth="272.0" layoutX="14.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon_appdev.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="790.0" style="-fx-background-color: white;" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.SignUp">
+   <top>
+      <AnchorPane prefHeight="120.0" prefWidth="790.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="78.0" layoutY="40.0" text="PesoGuard" textFill="#27ae60">
+               <font>
+                  <Font size="41.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="btnReturn" fitHeight="40.0" fitWidth="52.0" layoutX="22.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@return_appdev.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="415.0" prefWidth="414.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="114.0" layoutY="14.0" spacing="15.0">
+               <children>
+                  <VBox>
+                     <children>
+                        <Label text="NAME" />
+                        <TextField fx:id="tf_name" prefHeight="26.0" prefWidth="186.0" />
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <Label text="DATE OF BIRTH" />
+                        <TextField fx:id="tf_dob" prefHeight="26.0" prefWidth="186.0" />
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <Label text="USERNAME" />
+                        <TextField fx:id="tf_username" prefHeight="26.0" prefWidth="186.0" />
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <Label text="PASSWORD" />
+                        <PasswordField fx:id="tf_password" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <Button fx:id="btnSignUp" layoutX="162.0" layoutY="274.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #27ae60;" text="SIGN UP" textFill="#efeeee">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <GridPane layoutX="114.0" layoutY="340.0" prefHeight="24.0" prefWidth="230.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="Already a member ?">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#showLogIn" style="-fx-background-color: transparent;" text="Log In !" textFill="#27ae60" underline="true" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Button>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </left>
+   <bottom>
+      <AnchorPane prefHeight="82.0" prefWidth="790.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <right>
+      <AnchorPane prefHeight="415.0" prefWidth="348.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="266.0" fitWidth="272.0" layoutX="14.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon_appdev.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

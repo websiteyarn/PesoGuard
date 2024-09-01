@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="790.0" style="-fx-background-color: white;" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.MarketPrice">
+   <top>
+      <AnchorPane prefHeight="42.0" prefWidth="720.0" style="-fx-background-color: #27AE60;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox layoutX="100.0" prefHeight="42.0" prefWidth="621.0" spacing="25.0">
+               <children>
+                  <ToggleButton fx:id="btnHome" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#showHome" prefHeight="42.0" styleClass="nav-button" text="Home" textAlignment="CENTER">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="navbar" />
+                     </toggleGroup>
+                  </ToggleButton>
+                  <ToggleButton fx:id="btnExpenses" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#showExpenses" prefHeight="42.0" styleClass="nav-button" text="Expenses" textAlignment="CENTER" toggleGroup="$navbar" />
+                  <ToggleButton fx:id="btnMarketPrice" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" prefHeight="42.0" selected="true" styleClass="nav-button" text="Market Price" textAlignment="CENTER" toggleGroup="$navbar" />
+               </children>
+            </HBox>
+            <ImageView fitHeight="27.0" fitWidth="31.0" layoutX="30.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon_appdev.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="122.0" layoutY="14.0" prefHeight="52.0" prefWidth="547.0" text="NCR Market Price Watch" textFill="#03573c">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="180.0" layoutY="58.0" prefHeight="35.0" prefWidth="434.0" text="Based from the Department of Agriculture's Price Monitoring: Bantay Presyo" />
+            <GridPane hgap="10.0" layoutX="24.0" layoutY="105.0" prefHeight="389.0" prefWidth="742.0" vgap="10.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="362.0" minHeight="10.0" prefHeight="361.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button fx:id="btnSearch" mnemonicParsing="false" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: #27ae60; -fx-background-radius: 5;" text="Search" textFill="WHITE" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="txtSearch" onKeyTyped="#textChanged" prefHeight="31.0" prefWidth="638.0" promptText="Enter Item Name" style="-fx-font-size: 15; -fx-text-fill: #919191; -fx-border-radius: 10; -fx-border-color: #919191; -fx-border-width: 0 0 1 0;" styleClass="search" />
+                  <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" stylesheets="@css/table.css" GridPane.columnSpan="2147483647" GridPane.rowIndex="1">
+                    <columns>
+                      <TableColumn fx:id="colName" editable="false" prefWidth="207.33334350585938" text="Name" />
+                      <TableColumn fx:id="colCat" editable="false" prefWidth="186.0" text="Category" />
+                        <TableColumn fx:id="colPastPrice" editable="false" prefWidth="91.3333740234375" text="Old Price" />
+                        <TableColumn fx:id="colPresPrice" editable="false" prefWidth="106.66668701171875" text="Current Price" />
+                        <TableColumn fx:id="colUnit" editable="false" prefWidth="82.0" text="Unit" />
+                        <TableColumn fx:id="colStatus" editable="false" prefWidth="68.0" text="Status" />
+                    </columns>
+                  </TableView>
+               </children>
+            </GridPane>
+            <Label layoutX="311.0" layoutY="86.0" text="Price as of February 16, 2023" />
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="41.0" prefWidth="790.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="474.0" layoutY="2.0" text="**Average price is updated every Saturday of the week" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

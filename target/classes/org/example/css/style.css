@@ -1,0 +1,116 @@
+/*@font-face {
+    src: url("/org/example/Inter-Regular.ttf");
+}
+
+.text {
+    -fx-font-family: Inter;
+}*/
+
+.button:focused,
+.toggle-button:focused,
+.menu-button:focused,
+.spinner:focused,
+.combo-box-base:focused {
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+}
+
+.button {
+    -fx-cursor: hand;
+}
+
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 14;
+}
+
+.nav-button:selected {
+    -fx-text-fill: #03573C;
+}
+
+.section {
+    -fx-fill: transparent;
+    -fx-stroke: #919191;
+    -fx-arc-height: 10;
+    -fx-arc-width: 10;
+}
+
+.shopping-list {
+    -fx-border-width: 1;
+    -fx-border-color: #919191;
+    -fx-border-radius: 5;
+}
+
+.title {
+    -fx-text-fill:  #27AE60;
+    -fx-font-size: 16;
+}
+
+.title .text {
+    -fx-stroke: #27AE60;
+    -fx-stroke-width: 1;
+}
+
+.subtitle {
+    -fx-text-fill:  #919191;
+    -fx-font-size: 12;
+}
+
+.price {
+    -fx-text-fill:  white;
+    -fx-font-size: 20;
+}
+
+.price .text {
+    -fx-stroke: white;
+    -fx-stroke-width: 1;
+}
+
+.combo-box {
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, white;
+    -fx-border-color: #27AE60;
+    -fx-border-width: 1;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-font-size: 11;
+}
+
+/*Edit Normal Cell color */
+.combo-box .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+}
+
+/*Edit Cell Color Only when cursor hover cell */
+.combo-box .list-cell:hover {
+    -fx-background-color: #27AE60;
+    -fx-text-fill: white;
+}
+
+.search {
+    -fx-background-insets: 0;
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+.text-field .content {
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+.search:focused .content {
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+.search:focused {
+    -fx-highlight-fill: #27AE60;
+    -fx-highlight-text-fill: white;
+}
+
+.search .content {
+    -fx-padding: 5px;
+    -fx-text-fill: #919191;
+    -fx-highlight-fill: #27AE60;
+    -fx-highlight-text-fill: white;
+}
