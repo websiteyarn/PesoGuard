@@ -1,5 +1,5 @@
 # PesoGuard: A Budget Management and Price Monitoring System
-![PesoGuard]()
+![PesoGuard](https://github.com/websiteyarn/PesoGuard/blob/main/PesoGuard_prev.png)
 
 ## Overview
 
