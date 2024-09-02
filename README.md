@@ -18,7 +18,7 @@ ___PesoGuard___ is a system consisting of two primary features:
 ## Developers
 
 | Name | Role | 
-|-------------|
+|------| -----|
 | Quencess May Munsayac   | x     | 
 | Mary Grace Arboladura     | x    | 
 | Francheska Reynoso     | x    | 
