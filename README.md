@@ -21,5 +21,5 @@ ___PesoGuard___ is a system consisting of two primary features:
 |------| -----|
 | Queencess May Munsayac   | UI/UX Designer & Lead Frontend Developer | 
 | Mary Grace Arboladura     | Lead Backend Developer    | 
-| Francheska Reynoso     | UI/UX Designer and Frontend Developer    | 
+| Francheska Reynoso     | UI/UX Designer & Frontend Developer    | 
 | John Kenly Solosa     | Developer | 
