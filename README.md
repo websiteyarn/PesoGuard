@@ -15,3 +15,10 @@ ___PesoGuard___ is a system consisting of two primary features:
 - JavaFX - used for building the User Interface.
 - Maven - build tool used for installing project dependencies.
 
+## Developers
+
+| Name | Role | 
+| Quencess May Munsayac   | x     | 
+| Mary Grace Arboladura     | x    | 
+| Francheska Reynoso     | x    | 
+| John Kenly Solosa     | x    | 
